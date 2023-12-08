@@ -18,7 +18,5 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-py39_23.10.0-1-L
  echo ". ~/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc && \
  echo "conda activate base" >> ~/.bashrc
 
-RUN ~/miniconda3/bin/conda install -c conda-forge mamba -yq && ~/miniconda3/bin/mamba clean -a -y
-
 SHELL ["/bin/bash", "-c"]
 WORKDIR /home
